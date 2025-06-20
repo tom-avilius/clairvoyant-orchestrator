@@ -1,10 +1,15 @@
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
+from api import result
 
 app = FastAPI()
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-@app.get("/result")
-async def hello():
-    return {
-        "msg": "Hello there!"
-    }
+app.include_router(result.router)
