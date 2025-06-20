@@ -8,6 +8,7 @@ import httpx
 router = APIRouter()
 
 # the endpoint to make requests
+# NOTE: This is for development only.
 NLI_URL = "http://localhost:8000/analyze"  # or your deployed NLI endpoint
 
 
