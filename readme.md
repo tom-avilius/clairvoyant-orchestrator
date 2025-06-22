@@ -20,8 +20,6 @@ npm install
 
 ```bash
 npm run dev
-
-📦 API Highlights
 ```
 
 | Endpoint                | Description                          |
@@ -32,14 +30,8 @@ npm run dev
 
 ---
 
-```
-
----
-
 ## 📄 License
 
 GNU GPL v3
 
 ---
-
-```
