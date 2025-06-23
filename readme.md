@@ -9,7 +9,7 @@ Clairvoyant Orchestrator is the backend coordination service for the Clairvoyant
 ```bash
 git clone https://github.com/tom-avilius/clairvoyant-orchestrator.git
 cd clairvoyant-orchestrator
-npm install
+pip install fastapi[standard]
 ```
 
 ### 2. Setup Environment Variables
@@ -19,7 +19,7 @@ npm install
 ### 3. Run Development Server
 
 ```bash
-npm run dev
+fastapi dev app/main.py --port 8001
 ```
 
 | Endpoint                | Description                          |
